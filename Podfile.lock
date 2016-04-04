@@ -1,0 +1,18 @@
+PODS:
+  - BMSAnalyticsSpec (0.0.15)
+  - BMSCore (0.0.39):
+    - BMSAnalyticsSpec (= 0.0.15)
+  - BMSPush (0.1.06):
+    - BMSAnalyticsSpec
+    - BMSCore
+
+DEPENDENCIES:
+  - BMSCore
+  - BMSPush
+
+SPEC CHECKSUMS:
+  BMSAnalyticsSpec: 23711ca2251451f0530aef4e83940c3f830f7222
+  BMSCore: 198fe8dd0c255b89f1b2a76727b01ed079118658
+  BMSPush: abcdaff7542c54f40b9ea85960ab92eedd9de6f8
+
+COCOAPODS: 0.39.0.rc.1

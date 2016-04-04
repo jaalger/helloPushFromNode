@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bluemixAppGUID</key>
+	<string>634edcf3-e8f1-494f-8b9e-b1b1bcfaf52a</string>
+	<key>bluemixAppRoute</key>
+	<string>https://swiftjaa.mybluemix.net</string>
+	<key>bluemixRegion</key>
+	<string>.ng.bluemix.net</string>
+</dict>
+</plist>
