@@ -48,11 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let push =  BMSPushClient.sharedInstance
         //Registering Device for Push Notifications
         push.registerDeviceToken(deviceToken) { (response, statusCode, error) -> Void in
+            //Handle successful registration
             if error.isEmpty {
                 print( "Response during device registration : \(response)")
                 print( "status code during device registration : \(statusCode)")
-            
+                //Obtain the pushDeviceID from the Push Notification service
                 let pushDeviceId = BMSClient.sharedInstance.authorizationManager.deviceIdentity.id
+                //Save the pushDeviceID locally
                 NSUserDefaults.standardUserDefaults().setValue(pushDeviceId, forKey: "pushDeviceID")
                 self.showAlert("Push Notification Registration", message: "Successfully registered for Push Notifications")
                 }
