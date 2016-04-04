@@ -39,6 +39,7 @@ Configure Push Notification service:
 ### Deploy the custom Node code to your Bluemix environment
 The helloPushFromNode sample application requires custom code to be deployed to the Node.js application running on Bluemix. This code contains a function that handles sending push notifications to requesting devices when invoked from the client side application.
 Follow the required steps to deploy the custom Node.js code. You can find the Node resources in the helloPushFromNode/Node directory:
+
 1. Edit `manifest.yml` file. Change the `host` and `name` properties to match the app name you assigned when creating the Bluemix MobileFirst boilerplate app. 
 2. After logging in to Bluemix using the command `cf login -a https://api.{region}.bluemix.net` (where region is either ng, eu-gb, or au-syd) navigate to the NodeJS directory. Run the `cf push {your_Bluemix_app_name}` command to deploy your application to Bluemix which will bind the custom Node.js code to the Mobile Client Access service instance and start the app.
 3. If done correctly, you should now have the updated Node.js app running in your Bluemix environment. 
@@ -58,9 +59,9 @@ Swift:
 7. Open the `Settings.plist` and add the corresponding **bluemixAppGUID**,
 **bluemixAppRoute**, and **bluemixRegion**. You can find the bluemixAppGUID and bluemixAppRoute under the **mobile options** section in your Bluemix Dashboard. For your bluemixAppRoute it is recommended to use https protocol to hanlde the new requirements with Application Transport Securtiy (ATS). The bluemixRegion has the following options:
 
-US: .ng.bluemix.net
-London: .eu-gb.bluemix.net
-Sydney: .au-syd.bluemix.net
+US: .ng.bluemix.net     
+London: .eu-gb.bluemix.net      
+Sydney: .au-syd.bluemix.net     
 
 The helloPushFromNode application will use these configuration values in order to initialize your application agaist your Bluemix environment in the `AppDelegate.swift`. 
 
