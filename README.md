@@ -6,7 +6,7 @@ Use the following steps to configure the helloPush sample for Objective-C:
 
 1. [Download the helloPushFromNode sample](#download-the-hellopushfromnode-sample)
 2. [Configure the mobile backend for your helloPushFromNode application](#configure-the-mobile-backend-for-your-hellopushfromnode-application)
-3. [Deploy the custom Node.js code to your Bluemix environment](#deploy-the-custom-node.js-code-to-your-bluemix-environment)
+3. [Deploy the custom Node code to your Bluemix environment](#deploy-the-custom-node-code-to-your-bluemix-environment)
 4. [Configure the front end in the helloPushFromNode sample](#configure-the-front-end-in-the-hellopushfromnode-sample)
 5. [Run the iOS app](#run-the-ios-app)
 
@@ -36,7 +36,7 @@ Configure Push Notification service:
 2.  In the Apple Push Certificate section, select the Sandbox environment
 3.  Upload a valid APNs enabled push certificate (.p12 file), then enter the password associated with the certificate.
 
-### Deploy the custom Node.js code to your Bluemix environment
+### Deploy the custom Node code to your Bluemix environment
 The helloPushFromNode sample application requires custom code to be deployed to the Node.js application running on Bluemix. This code contains a function that handles sending push notifications to requesting devices when invoked from the client side application.
 Follow the required steps to deploy the custom Node.js code. You can find the Node resources in the helloPushFromNode/Node directory:
 1. Edit `manifest.yml` file. Change the `host` and `name` properties to match the app name you assigned when creating the Bluemix MobileFirst boilerplate app. 
@@ -69,7 +69,7 @@ For push notifications to work successfully, you must run the helloPushFromNode 
 
 When you run the application, you will see a single view application with a text box to enter message text, a "Register for Push" button, and a "Send Push From Node" button. You will first need to click the "Register for Push" button in order to  attempt to register the device and application to the Push Notification Service. The app uses an alert to display the registration status (successful or failed). On a successful registration the client side application saves the pushDeviceID that was assigned to the device from the Push Notification service. This is accomplished in the `AppDelegate.swift`:
 
-```swift:
+```obj-c
 func application (application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData){
         let push =  BMSPushClient.sharedInstance
         //Registering Device for Push Notifications
