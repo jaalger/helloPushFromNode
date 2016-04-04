@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bluemixAppGUID</key>
-	<string></string>
 	<key>bluemixAppRoute</key>
+	<string></string>
+	<key>bluemixAppGUID</key>
 	<string></string>
 	<key>bluemixRegion</key>
 	<string>.ng.bluemix.net</string>
