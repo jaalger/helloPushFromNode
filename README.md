@@ -46,9 +46,6 @@ Follow the required steps to deploy the custom Node.js code. You can find the No
 4. Your Bluemix application is now available at: `https//{hostname}.{region}.mybluemix.net`
 
 ### Configure the front end in the helloPushFromNode sample
-1. In a terminal, navigate to the `helloPushFromNode` directory where the project was cloned
-
-Swift:
 
 1. Navigate to the `helloPushFromNode` folder
 2. If the CocoapPods client is not installed, install it using the following command: `sudo gem install cocoapods`
